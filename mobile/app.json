@@ -1,0 +1,17 @@
+{
+  "expo": {
+    "name": "GX Rise",
+    "slug": "gx-rise",
+    "version": "1.0.0",
+    "sdkVersion": "54.0.0",
+    "orientation": "portrait",
+    "platforms": ["ios", "android", "web"],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.gxrise.app"
+    },
+    "android": {
+      "package": "com.gxrise.app"
+    }
+  }
+}
