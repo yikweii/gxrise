@@ -1,27 +1,132 @@
 # gxrise
 
+**GX Rise** is an AI-powered financial coaching module for GXBank, designed to break the debt cycle among Malaysian university students and fresh graduates through intelligent nudges, automated savings, and behavioural accountability.
 
-FEATURE 1: FINANCIAL HEALTH SCORE
-Real-time score 0-100. See instantly if you're healthy or at risk.
- 
-FEATURE 2: SMART NUDGE ENGINE
-AI watches spending. About to waste money? You get nudged. "This purchase = 10 days of savings." 
-You choose better.
- 
-FEATURE 3: AUTO-SAVE TRIGGERS
-Salary lands → savings move automatically. No willpower. No manual transfer. Just protection.
- 
-FEATURE 4: PTPTN REPAYMENT TRACKER
-Student loan balance, repayment schedule, monthly interest. Debt stops being invisible.
- 
-FEATURE 5: BNPL DEBT AGGREGATION
-Atome. Split. ShopeePayLater. All unified. You owe RM2000, not RM500. Now you see the truth.
- 
-FEATURE 6: WEEKLY AI DIGEST
-Claude Haiku in Bahasa Malaysia. Every week: spent, saved, BNPL status, next action. Clear advice.
- 
-FEATURE 7: POCKET WITH KAWAN
-Group savings with friends. Multi-approval. Transparent. Friends hold you accountable.
- 
-FEATURE 8: SMART SUBSCRIPTION TRACKER
-Finds forgotten subscriptions. Suggests cancellations. Saves RM150/month. Control back in your hands.
+---
+
+## 🎯 One-Line Pitch
+
+*"GXBank already has your money. GX Rise makes it work for you."*
+
+---
+
+## 📊 The Problem
+
+- **400,000** PTPTN borrowers have never repaid (RM5B default)
+- **877** youth declared bankrupt in 2024 (+21% YoY)
+- **40%** of Malaysia's RM9.3B BNPL spending is from youth
+- **70%** of Malaysians save <RM500/month
+- **GXBank has 1M+ users** but no AI coaching layer
+
+---
+
+## 💡 The Solution: 8 Core Features
+
+### 1️⃣ **AI Financial Health Score**
+Personalised 0–100 score across 4 dimensions:
+- Savings Rate
+- Spending Control
+- Debt Risk
+- Emergency Buffer
+
+### 2️⃣ **Smart Nudge Engine**
+Context-aware notifications triggered by real spending patterns:
+- GrabFood overspend → save suggestion
+- PTPTN disbursement → auto-save offer
+- BNPL accumulation → debt warning
+
+### 3️⃣ **Automated Savings Triggers**
+Remove willpower from saving:
+- Round-up saves on every transaction
+- PTPTN disbursement auto-lock
+- Salary sweep to savings pocket
+- Category budget overflow auto-save
+
+### 4️⃣ **PTPTN Repayment Tracker**
+Dedicated tracker for student loan repayment:
+- Disbursement calendar
+- Interest calculator
+- Repayment schedule planner
+- Default risk alerts
+
+### 5️⃣ **BNPL Debt Aggregation**
+Unified view of all hidden instalments:
+- Atome, Split, Shopee PayLater, Lazada
+- Total committed debt vs. free cash
+- Payment due dates
+- Pause recommendations
+
+### 6️⃣ **Weekly AI Digest (Claude Haiku)**
+Personalised financial summary in **Bahasa Malaysia**:
+- Weekly spending review
+- Savings progress
+- Actionable recommendations
+- Natural language insights
+
+### 7️⃣ **Pocket with Kawan + Auto Bill Split**
+Social savings layer:
+- Create shared savings goals with friends
+- Transparent progress (amounts hidden, streaks visible)
+- Group bill splitting with OCR receipt parsing
+- Savings accountability streaks
+
+### 8️⃣ **Smart Subscription Tracker**
+Subscription management:
+- Auto-detect recurring charges
+- Categorise by usage (active/unused/forgotten)
+- Cancel guidance per platform
+- Annual cost aggregation
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|---|---|
+| **Frontend** | React Native / Expo (cross-platform iOS/Android) |
+| **Backend** | FastAPI (Python) with async processing |
+| **Database** | Firebase Firestore (real-time sync + offline) |
+| **AI Engine** | MiniLM (ONNX) for on-device spending classification |
+| **LLM Integration** | Claude Haiku 4.5 for digest generation |
+| **Analytics** | Firebase Analytics for behaviour tracking |
+| **Notifications** | Firebase Cloud Messaging (FCM) |
+| **Data Aggregation** | Notification parsing + Open Finance (BNM framework) |
+
+## 🚀 Quick Start (Development)
+
+### Prerequisites
+```bash
+Node.js 18+
+Python 3.9+
+Firebase account
+Anthropic API key (for Claude Haiku)
+```
+
+### Setup Backend
+```bash
+cd backend
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+pip install -r requirements.txt
+python -m uvicorn app.main:app --reload
+```
+
+### Setup Frontend
+```bash
+cd frontend
+npm install
+npx expo start
+```
+
+### Generate Mock Data
+```bash
+cd mock-data
+python generate_transactions.py
+```
+
+---
+
+
+
+
+
