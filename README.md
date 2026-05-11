@@ -114,8 +114,9 @@ uvicorn main:app --reload
 ### Setup Frontend
 ```bash
 cd frontend
-npm install
-npx expo start
+npm install --legacy-peer-deps
+npx expo start --web (* For web)
+npx expo start --clear (*For mobile)
 ```
 
 ### Generate Mock Data
